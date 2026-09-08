@@ -48,33 +48,3 @@
 
 # print(text.upper())
 # print(number.bit_length())
-
-# # Types
-# name="Kip"
-# type_of_name=type(name)
-# print(type_of_name)
-
-# age=28
-# type_of_age=type(age)
-# print("Your Age is:" + str(age))
-
-#Math
-# password ="12ed8"
-# print("The length of the password is:", len(password))
-
-# if len (password) < 8:
-#     print("Password is too short")
-
-# text = """
-#     Python is a high-level, interpreted programming language that 
-#     is widely used for web development, data analysis, artificial 
-#     intelligence, scientific computing, and more. 
-#     It was created by Guido van Rossum and first released in 1991. 
-#     Python emphasizes code readability and simplicity, 
-#     making it an excellent choice for beginners and experienced developers alike.
-# """
-# print(text.count("and"))
-
-# Transformations
-price = "123,7889"
-print(price.replace(",", "")) 
