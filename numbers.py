@@ -18,7 +18,7 @@ import random
 # print(5 - 3)  # Subtraction
 # print(5 * 3)  # Multiplication
 # print(5 / 3)  # Division
-# print(5 // 3)  # Floor Division divides and returns the largest integer less than or equal to the result
+# print(17 // 3)  # Floor Division divides and returns the largest integer less than or equal to the result
 # print(5 % 3)  # Modulus returns the remainder of the division (Detect odd and even numbers)
 # print(5 ** 3)  # Exponentiation raises the number to the power of another number
 
@@ -29,7 +29,7 @@ import random
 # print(x)  # Output: 8
 
 # Rounding
-# #Measure distance
+#Measure distance
 # print(abs(2-10))  # Output: 8 (absolute value)returns the absolute value of a number, which is the distance from zero on the number line.
 
 # Rounding Numbers
@@ -45,7 +45,7 @@ import random
 
 
 # # Generate a random integer between 1 and 10 (inclusive)
-# print(random.randint(1, 100))
+# print(random.randint(4, 100))
 
 # # Generate a random float between 0 and 1
 # print(random.random())
@@ -62,6 +62,6 @@ import random
 # print(isinstance(x, float))  # Output: True (checks if x is an instance of the float class)
 # # isinstance() check if a value belongs to a specific data type or class. It returns True if the value is an instance of the specified class, and False otherwise.
 
-x = random.randint(1, 100)  # Output: A random integer between 1 and 100 (inclusive)
-print(x)
-print(x % 2 == 0)  # Output: True if x is even, False if x is odd
+# x = random.randint(1, 100)  # Output: A random integer between 1 and 100 (inclusive)
+# print(x)
+# print(x % 2 == 0)  # Output: True if x is even, False if x is odd

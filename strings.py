@@ -111,10 +111,11 @@
 # print(search.lower() == data.lower())  # Output: True
 
 # Search - Validate file names in system
-# phone1 = "+49-123-456-7890"
+phone1 = "+49-123-456-7890"
 # phone2 = "+1-987-654-3210"
 # print(phone1.startswith("+49"))  # Output: True
-# print(phone1[4:])
+print(phone1[::-3])
+# 9134
 
 # email = "graham@gamil.com"
 # print(email.endswith("gmail.com"))  # Output: True
@@ -127,16 +128,16 @@
 # url = "https://api.greensett.com/v1/users"
 # print("/api" in url)  # Output: True
 
-phone1 = "+49-123-456-7890"
-phone2 = "+1-987-654-3210"
-print(phone1.startswith("+49"))  # Output: True
+# phone1 = "+49-123-456-7890"
+# phone2 = "+1-987-654-3210"
+# print(phone1.startswith("+49"))  # Output: True
 
-print(phone1[phone1.find("-")+1:]) # Output: 123-456-7890
+# print(phone1[phone1.find("-")+1:]) # Output: 123-456-7890
 
-Validation
-country = "Germany1"
-print(country.isalpha())  # Output: False. Check if the string contains only alphabetic characters (letters).
+# Validation
+# country = "Germany1"
+# print(country.isalpha())  # Output: False. Check if the string contains only alphabetic characters (letters).
 
-phone_number = "123456-7890"
-print(phone_number.isnumeric())  # Output: False. Check if the string contains only numeric characters (digits).
+# phone_number = "123456-7890"
+# print(phone_number.isnumeric())  # Output: False. Check if the string contains only numeric characters (digits).
  
