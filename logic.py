@@ -1,8 +1,8 @@
 email=''
-phone = "123456-7890"
+phone = 1234567890
 username = "user123"
 
-# # Validation
+# Validation
 # print(any([email, phone, username])) # Output: True. Checks if at least one of the variables is non-empty (truthy).
 
 # print(all([email, phone, username])) # Output: False. Checks if all of the variables are non-empty (truthy).
@@ -19,20 +19,20 @@ username = "user123"
 # print(10!=5)  # Output: True. Not equal operator.3
 
 
-# x = 5
+# x = 9
 
 # print(x > 3 and x < 10)  # Output: True. Logical AND operator.
 # print(x < 3 and x < 10)  # Output: False. Logical AND operator.
 # print(x < 3 or x > 10)  # Output: False. Logical OR operator. 
 # print(x > 3 or x > 10)  # Output: True. Logical OR operator. 
 
-# #Check if system is under pressure
+#Check if system is under pressure
 # cpu_usage = 75
 # memory_usage = 80
 
 # print(cpu_usage > 70 or memory_usage > 95)  # Output: True. Checks if both CPU and memory usage are above the threshold.
 
-# # Check user credentials before logging in
+# Check user credentials before logging in
 # email = True
 # password = False
 
@@ -42,28 +42,30 @@ username = "user123"
 
 # Control Mixed conditions
 
-# is_logged_in = True
+# is_logged_in = False
 # is_guest = False
 # is_banned = True
 
-# print((is_logged_in or is_guest) and not is_banned)  # Output: True. Checks if the user is either logged in or a guest, and not banned. 
+# print(is_logged_in or is_guest and not is_banned)  # Output: True. Checks if the user is either logged in or a guest, and not banned. 
 
 # # in operator - Checks if a value exists in a sequence (like a string, list, or tuple).
-# print("user" in username)  # Output: True. Checks if the substring "user" is present in the username.
+# print("date" in username)  # Output: True. Checks if the substring "user" is present in the username.
 
 # # security check: esnsuring domain is not banned
-# domain = "baddomain.com"
+# domain = "gooddomain.com"
 # banned_domains = ["baddomain.com", "malicious.com", "spamdomain.org"]
+
+
 # print(domain not in banned_domains)  # Output: False. Checks if the domain is not in the list of banned domains, ensuring it's safe to use.
 
-# x = ['q', 'w', 'e', 'r', 't', 'y']
+# x = ['q', 'w', 'e', 'r', 't',]
 # y = ['q', 'w', 'e', 'r', 't', 'y']
 
 # print (x is y)  # Output: False. Checks if x and y refer to the same object in memory (identity comparison).
 # print (x == y)  # Output: True. Checks if x and y have the same content (value comparison).
 
-# # Make sure an email exists and is valid before sending a notification
-# email = "None"
+# Make sure an email exists and is valid before sending a notification
+# email = ""
 
 # print(email is not None and email!="")  # Output: False. Checks if email is not None and contains an "@" symbol, ensuring it's valid before sending a notification.
 
@@ -74,7 +76,7 @@ username = "user123"
 # print (username is not None  and username  !="" and age >=18)
 
 # # Challenge 2 - Check if password is at least 8 characters and does not have any spaces
-# password = "utwqfdagsddsjiad"
+# password = "butwqfdagsddsjiad"
 
 # number_of_spaces = len(password) - len(password.strip())
 
@@ -82,7 +84,7 @@ username = "user123"
 
 # Challenge 3 - Check if user's email is not empty, containes '@' and end with '.com'
 
-# email = "kibokohatari@gmail.com.ui"
+# email = "kibokohatari@gmail.com"
 # print(email !="" and '@' in email and email.endswith(".com"))
 
 # # Challenge 4 = Check if username is a string, is not None, and is longer than 5 characters
@@ -91,9 +93,9 @@ username = "user123"
 # print(type(username) is str and username is not None and len(username)> 5 )
 
 # Challenge 5 = Check if user is either an Admin or a moderator, and either they are not banned or they've verified their email
-user_admin = True
-is_moderator = False
-is_banned = True
-is_verified = True
+# user_admin = True
+# is_moderator = False
+# is_banned = False
+# is_verified = True
 
-print((user_admin or is_moderator) and (is_banned or is_verified))
+# print((user_admin or is_moderator) and (is_banned or is_verified))
