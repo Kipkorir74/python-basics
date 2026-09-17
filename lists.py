@@ -331,18 +331,18 @@ numbers = [1,2,3,4,5]
 
 # comprehension
 
-domains = ['www.google.com',
-           'jumanji.com',
-           'localhost',
-           'WWW.CARRICKBALL.COM'] #Normalize the domains into standard format
+# domains = ['www.google.com',
+#            'jumanji.com',
+#            'localhost',
+#            'WWW.CARRICKBALL.COM'] #Normalize the domains into standard format
 
-cleaned = [
-    #Data transformation
-    d.lower().replace('www.','')
-    # loop
-    for d in domains
-    #data filtering
-    if '.' in d
-]
+# cleaned = [
+#     #Data transformation
+#     d.lower().replace('www.','')
+#     # loop
+#     for d in domains
+#     #data filtering
+#     if '.' in d
+# ]
 
-print (cleaned)
+# print (cleaned)
