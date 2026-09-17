@@ -1,7 +1,7 @@
-#Loops control the flow of the code
+# Loops control the flow of the code
 
 # items = [1,2,3,4,5, "Hi"]
-# for item in (items):
+# for item in items:
 
 #     print(f"Round: {item}")
 
@@ -11,7 +11,7 @@
 
 #     print(f"Round: {item}")
 
-# for item in range (1,10,2): #define the start, stop, step 
+# for item in range (0,10): #define the start, stop, step 
 #     print(f"Round: {item}")
 
 
@@ -20,6 +20,7 @@
 
 # for score in scores:
 #     total += score #Iterate through list, adding the values to the total for each iteration
+#     print(f"Current Total: {total}")
 # print ("Final Total:", total) 
 
 # files = ['     Report.csv  ', '  DATA.csv ', ' final.txt'] #List with inconsictent casing and unnecessary spaces
@@ -28,6 +29,8 @@
 #     file = file.strip().lower().replace('.txt', '.csv')
 
 #     print(f'Processing {file}' )
+
+
 
 # Challenge PRINT THE 7 TIMES TABLE FROM 1 TO 10 USING A FOR LOOP
 # for item in range(1, 11):
@@ -47,14 +50,14 @@
 #     print()
 
 
-# names = ['John', 'Maria', '','Johnte']
+# names = ['John', 'Maria','','Johnte']
 
 # for name in names: #Loop through the names in the list
 #     if name == '': #Once we reach an empty value, stop the loop
-#         # print("Empty value detected!")
+#         print("Empty value detected!")
 #         # break #stops loop immediately
 #         # continue #skips the loop cycle based on condition and jump back to the loop
-#         # pass #todo: Handle empty value
+#         pass #todo: Handle empty value
 #         name = name.replace('', 'Kiboko')
 #     print(f"Name = {name}")
 
@@ -66,7 +69,7 @@
 
 # for day in days:
 #     if day in weekends:
-#         # print("Not a Working day")
+#         print("Not a Working day")
 #         continue
 #     print(f"Workday: {day}")
 
@@ -86,7 +89,7 @@
 #         break
 #     print(f"Processing Email: {email}")
 
-# items =[1,3,5,9]
+# items =[1,10,3,5,9]
 
 # for item in items:
 #     if  item % 2 == 0:  
@@ -96,8 +99,8 @@
 #     print("All numbers are odd") #Statement executed if python manages to iterate trjough the complete list
     
 
-# # Task -Check for missing names in a list 
-# names = ['Kamau', 'Kiprono', 'Mwenda', 'Onjiko', None, 'Omollo']
+# Task -Check for missing names in a list 
+# names = ['Kamau', 'Kiprono', 'Mwenda', 'Onjiko', "None", 'Omollo']
 
 # for name in names:
 #     if name is None:
@@ -108,7 +111,7 @@
 
 #Task - Check if all files are csv files
 
-# files = ['jobs.csv', 'jumbo.txt', 'tasks.csv', 'open.csv']
+# files = ['jobs.csv', 'jumbo.csv', 'tasks.csv', 'open.csv']
 
 # for file in files:
 #     if not file.endswith('.csv'):
@@ -118,7 +121,7 @@
 #     print("All files end with .csv")
 
 # # Challenge - Check whetehr we have any filename that appears more than once 
-# file_list = ['data.xlsx', 'report.csv', 'summary.docx','report.csv','data.csv']
+# file_list = ['data.xlsx', 'summary.docx','report.csv','data.csv']
 # seen = set() # Used to create an empty set or to convert other collections (like lists, tuples, or strings) into sets to automatically strip away duplicate values
 # for item in file_list:
 #     if item in seen:
@@ -127,6 +130,7 @@
 #     seen.add(item)
 # else:
 #     print("All files are unique")
+#     print(seen)
 
 #Nested for loops
 
@@ -171,20 +175,20 @@
 # answer = ''
 
 # while answer != "yes":
-#     answer = input("Do you agree (yes/no):")
+#     answer = input("Do you agree (Yes/no):")
 #     # answer.strip().lower()
 # print("Thank You ")
 
 # Challenge - limit user to three attempts,  
 
-attempts = 0
+# attempts = 0
 
-while attempts < 3:
-    answer = answer = input("Do you agree (yes/no):")
-    if answer =='yes':
-        print("Glad we are on the same page")
-        break
-    attempts+=1
-else:
-        print('Three strikes, You are out!')
+# while attempts < 3:
+#     answer = input("Do you agree (yes/no):")
+#     if answer =='yes':
+#         print("Glad we are on the same page")
+#         break
+#     attempts+=1
+# else:
+#         print('Three strikes, You are out!')
  
