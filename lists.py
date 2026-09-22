@@ -311,6 +311,7 @@ numbers = [1,2,3,4,5]
 # print(check("k"))
 
 # prices=['$12.89','17.99','62.22'] #Transform the list from a list of strings to a list of floats
+
 # print(map(lambda p:float(p.replace('$','')), prices))
 
 
@@ -325,24 +326,24 @@ numbers = [1,2,3,4,5]
 #             ['Abunwasi',92],
 #             ['Omondi', 65]    
 #             ]
-# # print(list(filter(lambda row:row[1] > 70, students) )) #Reterive students with score higher than 2
+# print(list(filter(lambda row:row[1] > 70, students) )) #Reterive students with score higher than 2
 
 # print(list(filter(lambda row: row[0].startswith('A'), students)))
 
 # comprehension
 
-# domains = ['www.google.com',
-#            'jumanji.com',
-#            'localhost',
-#            'WWW.CARRICKBALL.COM'] #Normalize the domains into standard format
+domains = ['www.google.com',
+           'jumanji.com',
+           'localhost',
+           'WWW.CARRICKBALL.COM'] #Normalize the domains into standard format
 
-# cleaned = [
-#     #Data transformation
-#     d.lower().replace('www.','')
-#     # loop
-#     for d in domains
-#     #data filtering
-#     if '.' in d
-# ]
+cleaned = [
+    #Data transformation
+    d.lower().replace('www.','')
+    # loop
+    for d in domains
+    #data filtering
+    if '.' in d
+]
 
-# print (cleaned)
+print (cleaned)
