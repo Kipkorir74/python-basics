@@ -13,15 +13,15 @@ a = {10,20,30,40}
 # print(a)
 
 # a.update([1,2])
-# a |={1,2} # alternative way of updating sets withouth using the update fn
+# # a |={1,2} # alternative way of updating sets withouth using the update fn
 # print(a)
 
 # a.remove(20) #Unsafe way as it can break code if value to be removed not present
 # print(a)
 
 #Use discard instead. Removes item if exists, does nothing if it doesnt
-# a.discard(11)
-# print(a)
+a.discard(10)
+print(a)
 
 #mathematical operations
 a = {12,14,33,67}
@@ -36,7 +36,7 @@ b = {14,22,56,33}
 # print (a & b) #Alternative way 
 
 # values in one list absent in the other 
-# print(a.difference(b))
+# print(b.difference(a))
 # print(a-b) #Alternative way 
 # print(b-a)
 
@@ -46,10 +46,13 @@ b = {14,22,56,33}
 
 # relationship methods
 # check if a ll items in are in b
-print(a.issubset(b))
+# a = {14,22,56,33}
+# b = {14,22,56,33,67,98}
 
-#check if b contains all values in a
-print(b.issuperset(a))
+# print(a.issubset(b))
 
-#Check if two sets share same items. zero values in common
-print(a.isdisjoint(b))
+# #check if b contains all values in a
+# print(b.issuperset(a))
+
+# #Check if two sets share same items. zero values in common
+# print(a.isdisjoint(b))

@@ -261,14 +261,14 @@ copy1 = original  #Referencing to same object in mememory
 
 letters = ['a','b','c', 'd']
 numbers = [1,2,3,4,5]
-# new=[]
+# # new=[]
 
-# for l in letters:
-#     new.append(l.upper()) #Store them in the new list
-#     print(new)
+# # for l in letters:
+# #     new.append(l.upper()) #Store them in the new list
+# #     print(new)
 
-#enumerate
-# print(list(enumerate(letters, start =2))) #takes in 2 params, can edefine where we start
+# #enumerate
+# print(list(enumerate(letters, start = 2))) #takes in 2 params, can edefine where we start
 
 # for index, value in enumerate(letters, start =2):
 #     print(index,value) 
@@ -283,8 +283,8 @@ numbers = [1,2,3,4,5]
 # numbers = ['1','2','3','4','5']
 # print(list(map(int,numbers))) #connverts the string of numbers to integres
 
-# names = ['Johnte   ', '  Kiprono  ', '  Mwangi'] #Can be used to remove spaces in strings using strip found in the class string
-# # print(list(map(str.strip, names)))
+names = ['Johnte   ', '  Kiprono  ', '  Mwangi'] #Can be used to remove spaces in strings using strip found in the class string
+# print(list(map(str.strip, names)))
 
 # for n in map(str.strip, names):
 #     print(n)
@@ -312,14 +312,16 @@ numbers = [1,2,3,4,5]
 
 # prices=['$12.89','17.99','62.22'] #Transform the list from a list of strings to a list of floats
 
-# print(map(lambda p:float(p.replace('$','')), prices))
+# # print(list(map(lambda p:float(p.replace('$','')), prices)))
+
+# print(list(map(lambda p: float(p.replace("$",'')),prices)))
 
 
 # p = "12.50" #Consider first replacing the $ with nothing to start with. Then apply the formula to the list
 # print(float(p.replace('$',''))) #Formula to sort the above list, prices
 
 # prices = [110,222,456,980]
-
+# print(list(filter(lambda p: p >=200, prices)))
 # print(list(filter(lambda p: p >= 300,prices)))
 
 # students = [['Luka', 76],
@@ -332,18 +334,18 @@ numbers = [1,2,3,4,5]
 
 # comprehension
 
-domains = ['www.google.com',
-           'jumanji.com',
-           'localhost',
-           'WWW.CARRICKBALL.COM'] #Normalize the domains into standard format
+# domains = ['www.google.com',
+#            'jumanji.com',
+#            'localhost',
+#            'WWW.CARRICKBALL.COM'] #Normalize the domains into standard format
 
-cleaned = [
-    #Data transformation
-    d.lower().replace('www.','')
-    # loop
-    for d in domains
-    #data filtering
-    if '.' in d
-]
+# cleaned = [
+#     #Data transformation
+#     d.upper().replace('www.','')
+#     # loop
+#     for d in domains
+#     #data filtering
+#     if '.' in d
+# ]
 
-print (cleaned)
+# print (cleaned)
