@@ -1,4 +1,5 @@
-import uuid
+import uuid #Python module to generate unique identifiers.
+
 class Archer:
 
     def __init__(self,hp, mana, arrows): 
@@ -6,14 +7,14 @@ class Archer:
         self.hp = hp
         self.mana = mana
         self.arrows = arrows
-        self._id = uuid.uuid4()
+        self._id = uuid.uuid4() #generates a practically unique ID
     def __str__(self):
         return f"Archer with {self.hp} hp and {self.mana} mana and {self.arrows} arrows"
 
     def __repr__(self):
         return f"Archer ({self.hp}, {self.mana}, {self.arrows})" 
 
-    def __add__(self, other):
+    def __add__(self, other):    #Makes the + operator work in python
         if not isinstance(other,Archer):
             return NotImplemented
         new_hp = self.hp + other.hp
@@ -35,23 +36,23 @@ archer1 = Archer(200,100,3)
 archer2 = Archer(100,100,3)
 archer3 = archer1 + archer2
 # print(hash(archer1))
-# archer1.mana = 100
-# print(hash(archer1))
+
 # print(archer3)
 # print(archer1 == archer2)
 # print (archer1 > archer2)
 
-new_dict = {archer1:"test"}
+new_dict = {archer1:"test"}  #For Python to use an object as a dictionary key, it needs to be hashable.
+# print(new_dict)
 
 class Company:
     def __init__(self,size):
         self.size = size
         self.archers = []
-        self.index = 0
+
     def add_archer(self,archer):
         if not isinstance(archer,Archer):
             raise TypeError("Only Archers Allowed")
-        if len(self.archers ) > self.size:
+        if len(self.archers ) >= self.size:
             raise ValueError("Company Already Full")
         self.archers.append(archer)
     def __add__(self, other):
@@ -65,9 +66,9 @@ class Company:
 
 
 archer2 = Archer(100,100,5)
+archer3 = Archer(200,100,5)
 company = Company(5)
-new_company = company + archer2+ archer2
-
+new_company = company + archer2+ archer3
 # print(company.archers)
 # print(new_company.archers)
 for archer in new_company.archers:

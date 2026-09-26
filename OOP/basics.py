@@ -28,5 +28,5 @@ class Archer:
 
 archer1 = Archer(100,120,4)  #Create an instance of the class Archer
 
-archer2 = Archer.from_string("100-120-7")
-archer2.static()
+archer2 = Archer.from_string("100-120-4")
+archer2.shoot()
